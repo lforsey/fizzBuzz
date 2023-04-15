@@ -15,12 +15,12 @@ const fizzBuzz = (num) => {
             arr.push('Buzz');
             num --;
         } else {
-            arr.push(num);
+            arr.push(num.toString());
             num --;
         }
     }     
     const newDiv = document.createElement('div');
-    const answer = document.createTextNode(arr)
+    const answer = document.createTextNode(arr.reverse())
     newDiv.appendChild(answer);
     form.appendChild(newDiv);
 }
